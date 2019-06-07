@@ -57,6 +57,7 @@ func main() {
 		}
 
 		postHTML := template.HTML(blackfriday.MarkdownCommon([]byte(mdfile)))
+		fmt.Println(postHTML)
 
 		post := Post{Title: postName, Content: postHTML}
 
